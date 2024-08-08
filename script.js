@@ -2,13 +2,14 @@
 const name = prompt("Enter Your Full name: ");
 
 if (name.includes(" ")) {
-    console.log("space is there");
+    if(name.at(-1) !==' '){ 
+    console.log("It's a Full Name.");
+} else {
+    console.log("There's a Space.");
 }
-// else if(name.includes("")){
-//     console.log("b is there");
-// }
+}
 else {
-    console.log("space is not there");
+    console.log("It's not a Full Name.");
     
 }
 
